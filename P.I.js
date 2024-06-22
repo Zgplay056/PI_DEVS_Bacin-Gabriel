@@ -67,7 +67,7 @@ var totalDespesas = "";
         let sal = parseFloat(document.getElementById('sal').value);
         console.log(sal)
         if (isNaN(sal)) {
-            alert("O campo Salário não pode ser vazio");
+            alert("WARNING: O campo Salário está vazio");
             return;
         }
         
