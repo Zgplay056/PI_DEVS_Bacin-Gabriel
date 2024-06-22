@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Financas</title>
+</head>
+<body>
+   <hr>
+    Controle de Finanças <br> 
+    <input type="text" placeholder = "Gasto" id="gasto">
+    <input type="number" placeholder = "Custo" id="custo" onkeypress="enviar_gasto(event)"> <br>
+    <br> <input type="submit" value="Enviar" onclick="enviar()" id="envio"> <br>  <hr>
+    <div id="resposta">
+        Gastos
+        <br>
+        <br>
+    </div>
+    <div id="total">
+        <br>
+       <br>
+    </div>
+    <br>
+    <div id="sobra">
+    </div>
+    <div>
+          <input type="number" placeholder="Salário" id="sal" onkeypress="enviar_salario(event)">
+          <input type="submit" value="ExibirTotal" onclick="sobra()">
+    </div>
+ <script src="P.I.js"></script>
+</body>
+</html>
