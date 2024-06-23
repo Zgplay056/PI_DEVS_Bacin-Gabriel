@@ -8,24 +8,19 @@
 <body>
    <hr>
     Controle de Finanças <br> 
-    <input type="text" placeholder = "Gasto" id="gasto">
-    <input type="number" placeholder = "Custo" id="custo" onkeypress="enviar_gasto(event)"> <br>
+    <input type="number" placeholder="Salário R$" id="sal" onkeypress="enviar_salario(event)">
+    <input type="text" placeholder = "Nome do Gasto" id="gasto">
+    <input type="number" placeholder = "Custo R$" id="custo" onkeypress="enviar_gasto(event)"> <br>
     <br> <input type="submit" value="Enviar" onclick="enviar()" id="envio"> <br>  <hr>
     <div id="resposta">
-        Gastos
+        Seus Gastos Vão Aparecer Aqui!!!
         <br>
         <br>
     </div>
     <div id="total">
-        <br>
-       <br>
     </div>
     <br>
     <div id="sobra">
-    </div>
-    <div>
-          <input type="number" placeholder="Salário" id="sal" onkeypress="enviar_salario(event)">
-          <input type="submit" value="ExibirTotal" onclick="sobra()">
     </div>
  <script src="P.I.js"></script>
 </body>
