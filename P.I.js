@@ -73,7 +73,7 @@ var totalDespesas = "";
     
         let sobra = sal - totalDespesas;
     
-        document.getElementById('sobra').innerHTML = `<hr> O total de suas despesas é R$ ${totalDespesas.toFixed(2)} e considerando sua receita de R$ ${sal.toFixed(2)}, sua receita é R$ ${sobra.toFixed(2)}`
+        document.getElementById('sobra').innerHTML = `<hr> O total de suas despesas é R$ ${totalDespesas.toFixed(2)} e considerando sua receita de R$ ${sal.toFixed(2)}, o que sobra é R$ ${sobra.toFixed(2)}`
         + " <br> <button onclick=\"limparTela(resposta,sobra)\">Limpar a Tela</button>";
     }
     
