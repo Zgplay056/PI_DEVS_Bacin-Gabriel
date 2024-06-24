@@ -90,3 +90,30 @@ var totalDespesas = "";
         document.getElementById('sobra').innerHTML = '';
         banco = [];
      } 
+
+    //Calculadora de juros compostos
+    function calcularJurosCompostos() {
+        var principal = parseFloat(document.getElementById('principal').value);
+        var investimento = parseFloat(document.getElementById('investimento').value);
+        var taxa = parseFloat(document.getElementById('taxa').value) / 100;
+        var tempo = parseInt(document.getElementById('tempo').value);
+
+        var montante = principal;
+        var totalInvestido = principal;
+
+        for (var i = 1; i <= tempo; i++) {
+            montante *= (1 + taxa); // Aplica juros sobre o montante atual
+            montante += investimento; // Adiciona o investimento mensal ao montante
+            totalInvestido += investimento; // Atualiza o total investido
+        }
+
+        var juros = montante - totalInvestido;
+
+        var resultado = `
+            <p>Montante após ${tempo} meses: R$ ${montante.toFixed(2)}</p>
+            <p>Total investido: R$ ${totalInvestido.toFixed(2)}</p>
+            <p>Juros acumulados: R$ ${juros.toFixed(2)}</p>
+        `;
+
+        document.getElementById('resultadoJuros').innerHTML = resultado;
+    }
